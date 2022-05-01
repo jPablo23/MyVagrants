@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# CodeIgniter 4 Vagrant setup
+Vagrant.configure("2") do |config|
+  # main config, provisioning, provider, etc.
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.synced_folder "./", "/var/www/html", create: true, group: "www-data", owner: "www-data"
+  config.vm.provision :shell, path: "vagrant.sh"
+  config.vm.network :forwarded_port, guest: 8080, host: 8080
+  config.vm.provider "virtualbox" do |vb|
+    vb.customize [ "modifyvm", :id, "--uartmode1", "disconnected" ]
+  end
+
+  # shell script for up trigger (add your seeds here if needed!)
+  $afterUp = <<-'SCRIPT'
+  echo "Running migrations/seeds"
+  cd /var/www/html && sudo composer install # composer
+  cd /var/www/html && sudo php spark migrate -all # migration
+  # cd /var/www/html && sudo php spark db:seed BasicSeeder #add your seeds
+  # any other post setup scripting
+  SCRIPT
+
+  # up trigger
+  config.trigger.after :up do |trigger|
+    trigger.run_remote = {
+      inline: $afterUp
+    }
+  end
+end
