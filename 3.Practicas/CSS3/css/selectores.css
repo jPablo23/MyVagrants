@@ -1,0 +1,23 @@
+#titular { /*por ID*/
+	color: green;
+}
+
+p.resaltado { /*El elemento P con clase resaltado*/
+	color: yellow;
+}
+
+.resaltado { /*Por Clase*/
+	color: blue;
+}
+
+body > p { /*Solo se aplica a los P que deciendan directamente de body*/
+	border: 1px solid #333;
+}
+
+body p { /*Entro en Body y cualquier P Que este adentro de body dale el formato*/
+	color: black;
+}
+
+h1, p { /*Todas las etiquetas h1 y p en color rojo*/
+	color: red;
+}

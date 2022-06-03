@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#contenedor {
+	border: 1px solid #f30;
+}
+
+.tarjeta {
+	float: left;/*FLoata los elementos del bloque*/
+	/*display: inline; /*Todos en Linea*/
+	/*display: inline-block; /*Todos en Linea y en bloke, en el html no debe de haber espacios para que se vean todos juntos*/
+	width: 100px;
+	height: 100px;
+	padding: 0;
+	border: 1px solid #333;
+	margin: 0;
+}
+
+.tarjeta p {
+	width: 70%;
+	border: 1px solid #fc0;
+	margin: 40% auto;
+}
+
+#ultimo {
+	/*float: right;*/
+	/*display: none;*/ /*lo elimina del disenio*/
+	/*visibility: hidden; /*Sigue ahi*/
+	
+}
+
+.clearfix { /*Interpreta la altura del contenido*/
+	clear: both;
+}

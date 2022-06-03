@@ -1,0 +1,223 @@
+/* 
+	Estilos CSS de la página
+*/
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear:both;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#nav-secundario {
+	padding: 0 50px 0 0;
+	margin: 0;
+	text-align: right;
+	background-color: #333;
+}
+
+	#nav-secundario > a {
+		display: inline-block;
+
+		padding: 10px 15px;
+		color: #999;
+		font-size: 13px;
+		font-weight: 100;
+	}
+
+	#nav-secundario > a:hover {
+		color: #ddd;
+		background-color: #111;
+	}
+
+header > h1 {
+	width: 980px;
+	height: 150px;
+	padding: 80px 0 0 20px;
+	margin: 0 auto;
+
+	background: url('../img/bg_header.jpg') center bottom no-repeat #eee;
+	background-size: cover;
+}
+
+#logo {
+	color: #5C8DC5;
+	font-size: 46px;
+	font-weight: 100;
+}
+
+#nav-principal {
+	border-top: 1px solid #90ABC6;
+
+	background-color: #ABC2DA;
+}
+	#nav-principal ul {
+		display: block;
+		overflow: auto;
+
+		width: 980px;
+		margin: 0 auto;
+		
+		list-style: none;
+	}
+
+	#nav-principal li {
+		float: left;
+	}
+
+	#nav-principal li:hover {
+		background-color: #90ABC6;
+	}
+
+	#nav-principal a {
+		display: block;
+		padding: 15px 15px;
+
+		color: #eee;
+		font-size: 15px;
+		text-shadow: 0 1px #90ABC6;
+	}
+
+	#nav-principal a:hover {
+		color: #fff;
+	}
+
+
+
+
+#contenedor, footer {
+	width: 980px;
+	padding: 30px 0 0 0;
+	margin: 0 auto;
+}
+
+	#principal, #complementario {
+		float: left;
+		padding: 0;
+	}
+
+	#principal > h2, #complementario > h2 {
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+
+	#principal {
+		width: 680px;
+		padding-right: 10px;
+	}
+
+		.entrada {
+			float: left;
+			width: 180px;
+			padding: 0;
+			margin: 0 20px 20px 0;
+		}
+
+		.entrada img {
+			width: 100%;
+			height: auto;
+		}
+
+		.entrada h2 {
+			margin: 0;
+			color: #666;
+			font-size: 13px;
+			font-weight: 400;
+		}
+
+		.entrada h3 {
+			margin: 0;
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		.entrada a {
+			color: #121212;
+		}
+
+	#complementario {
+		width: 300px;
+		padding-left: 10px;
+	}
+
+		#social li {
+			line-height: 32px;
+		}
+
+		#social a {
+			color: #333;
+			font-size: 16px;
+		}
+
+		#social a:hover {
+			color: #5C8DC5;
+		}
+
+
+#situacion, #amigos, #extras {
+	float: left;
+	padding: 0 10px;
+}
+
+#situacion {
+	width: 400px;
+}
+
+#amigos {
+	width: 280px;
+}
+
+	#amigos li {
+		border-top: 1px solid #ddd;
+	}
+
+	#amigos li:last-child {
+		border-bottom: 1px solid #ddd;
+	}
+
+	#amigos a {
+		display: block;
+		padding: 10px;
+		color: #aaa;
+	}
+
+	#amigos a:hover {
+		color: #333;
+	}
+
+#extras {
+	width: 300px;
+}
+
+#copyright {
+	padding: 20px 0;
+	margin: 30px 0 0 0;
+
+	color: #fff;
+	text-align: center;
+	background-color: #333;
+}

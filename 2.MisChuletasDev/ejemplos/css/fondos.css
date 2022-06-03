@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+	background: 
+		url('../img/logo.png') center right no-repeat scroll, 
+		url('../img/logo.png') 0 0 no-repeat fixed;
+	background-color: #ddd;/*Fondo Gris Claro*/
+
+	/*
+	background-image: url('../img/logo.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed; | El valor por defecto es scroll
+	background-color: #ddd;
+	*/
+}
+
+#contenedor {
+	width: 60%;
+	padding: 30px;
+	border: 1px solid #ccc;
+	margin: 20px auto;
+
+	background-color: #fff;/*Aplica al contenedor*/
+}
+
+h1 {
+	margin: 0;
+
+	font-size: 36px;
+	font-weight: 800;
+	letter-spacing: -2px;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+footer {
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	margin: 30px 0 0 0;
+
+	font-style: italic;
+	text-align: center;
+}
