@@ -74,7 +74,7 @@ txtKeyDown.addEventListener('keyup', e => {
 });
 
 let x = 0, y = 0;
-addEventListener('keyup', e => {
+addEventListener('keydown', e => {
     const ball = document.getElementById('ball');
 
     const move = direction => {
