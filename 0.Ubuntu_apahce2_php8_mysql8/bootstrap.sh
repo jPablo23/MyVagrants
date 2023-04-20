@@ -59,8 +59,8 @@ sudo a2enmod rewrite
 # install NodeJS, NPM and cURL
 echo "NodeJS and cURL."
 sudo apt-get -y install nodejs
-sudo apt-get -y install npm 
-sudo apt-get -y install curl 
+sudo apt-get -y install npm
+sudo apt-get -y install curl
 
 # install Composer
 echo "install Composer."
@@ -72,8 +72,9 @@ echo "list Versions."
 echo "======>XDDD<========"
 node -v
 npm -v
-composer -v
+composer -V
 mysql -V
+php -v
 # list Versions
 echo "Restart Services"
 # restart apache
@@ -85,5 +86,3 @@ echo "======>===<========="
 echo "======>===<========="
 echo "======>===<========="
 echo "======>FIN<========="
-
-
